@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>premananda</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <!--<div class="title">Katik</div>-->
+        <span id="header-title">Katik</span>
+        <span id="header-sub-title">Kalkulator Matematik</span>
+    </div>
+    <div class="main">
+        <div id="content">
+            <div class="pendahuluan">
+                <h1>Welcome to Katik</h1>
+                <p>Hai Sobat, Selamat datang di Katik :)</p>
+                <p>Sebuah web apps sederhana yang berfungsi untuk menghitung nilai luas dan keliling bangun datar</p>
+            </div>
+
+            <div class="luas-persegi">
+                <div id="title-luas">Luas Persegi</div>
+                <div id="content-luas">
+                    <div class="tempat-gambar">
+                        <!--div ini digunakan untuk membuat gambar persegi-->
+                        <div class="gambar-persegi">
+                            <div id="AB">
+                                <span id="A">A</span>
+                                <span>B</span>
+                            </div>
+                            <div id="CD">
+                                <span id="C">C</span>
+                                <span>D</span>
+                            </div>
+                            <p id="bujur-sangkar">Bujur sangkar</p>
+                        </div>
+                    </div>
+                    
+                    <div id="keterangan-luas">
+                        <p class="keterangan-rumus-luas">Rumus Luas Persegi yaitu:</p>
+                        <p class="rumus-luas">L = S x S</p>
+                        <p class="keterangan-rumus-luas">Dimana :</p>
+                        <p class="keterangan-rumus-luas">L = Luas</p>
+                        <p class="keterangan-rumus-luas">S = Sisi</p>
+                    </div>
+                    <div id="space-hitung-luas">
+                        <div id="titel-hitung-luas">Hitung Luas Persegi</div>
+                        <div id="tempat-input">
+                            <!--terdapat input dengan nama sisi-luas yang pada saat baru dijalankan akan bertuliskan Nilai Sisi sebagai tempat memasukkan nilai sisi-->
+                            <input id="sisi-luas" type="text" name="sisi-luas" placeholder="Nilai Sisi">
+                            <br>
+                            <!--span sebagai tempat memunculkan pesan eror-->
+                            <span id="numberText_1"></span>
+                        </div>
+                        <div id="tempat-output-luas">
+                            <!--div ini digunakan untuk menampilkan dan menghilangkan hasil perhitungan luas persegi-->
+                            <p>L = S x S</p>
+                            <p id="output_rumus_luas"></p>
+                            <p id="output_luas"></p>
+                        </div>
+                        <br>
+                        <div id="tempat-button-hitung">
+                            <!--terdapat tombol submit dengan nama hitung-luas yang jika di klik akan merujuk ke fungsi hitungLuas pada file javascript-->
+                            <button type="submit" name="hitung-luas" onClick="hitungLuas()">Hitung</button>
+                        </div>
+                        <br>
+                        <!--terdapat tombol reset yang jika di klik akan merujuk ke fungsi hideLuas pada file javascript-->
+                        <button type="reset" onclick="hideLuas()">Reset</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="keliling-persegi">
+                <div id="title-keliling">Keliling Persegi</div>
+                <div id="content-keliling">
+                    <div class="tempat-gambar">
+                        <!--div ini digunakan untuk membuat gambar persegi-->
+                        <div class="gambar-persegi">
+                            <div id="AB">
+                                <span id="A">A</span>
+                                <span>B</span>
+                            </div>
+                            <div id="CD">
+                                <span id="C">C</span>
+                                <span>D</span>
+                            </div>
+                            <p id="bujur-sangkar">Bujur sangkar</p>
+                        </div>
+                    </div>
+                    <div id="keterangan-keliling">
+                        <p class="keterangan-rumus-keliling">Rumus Keliling Persegi yaitu:</p>
+                        <p class="rumus-keliling">K = 4 x S</p>
+                        <p class="keterangan-rumus-keliling">Dimana :</p>
+                        <p class="keterangan-rumus-keliling">K = Keliling</p>
+                        <p class="keterangan-rumus-keliling">S = Sisi</p>
+                    </div>
+                    <div id="space-hitung-keliling">
+                        <div id="titel-hitung-keliling">Hitung Keliling Persegi</div>
+                        <div id="tempat-input">
+                            <!--terdapat input dengan nama sisi-keliling yang pada saat baru dijalankan akan bertuliskan Nilai Sisi sebagai tempat memasukkan nilai sisi-->
+                            <input id="sisi-keliling" type="text" name="sisi-keliling" placeholder="Nilai Sisi">
+                            <br>
+                            <!--span sebagai tempat memunculkan pesan eror-->
+                            <span id="numberText_2"></span>
+                        </div>
+                        <div id="tempat-output-keliling">
+                            <!--div ini digunakan untuk menampilkan dan menghilangkan hasil perhitungan keliling persegi-->
+                            <p>K = 4 x S</p>
+                            <p id="output_rumus_keliling"></p>
+                            <p id="output_keliling"></p>
+                        </div>
+                        <br>
+                        <div id="tempat-button-hitung">
+                            <!--terdapat tombol submit dengan nama hitung-keliling yang jika di klik akan merujuk ke fungsi hitungKeliling pada file javascript-->
+                            <button type="submit" name="hitung-keliling" onClick="hitungKeliling()">Hitung</button>
+                        </div>
+                        <br>
+                        <!--terdapat tombol reset yang jika di klik akan merujuk ke fungsi hidekeliling pada file javascript-->
+                        <button type="reset" onclick="hideKeliling()">Reset</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--link untuk menghubungkan dengan file javascript-->
+    <script src="script.js"></script>
+</body>
+</html>
