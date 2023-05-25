@@ -1,0 +1,232 @@
+body {
+    margin: 0px;
+    background-color: #ddd;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+    background-color: #3498db;
+    height: 120px;
+    text-align: center;
+}
+
+.header span {
+    display: inline-block;
+    padding-top: 20px;
+}
+
+#header-title {
+    font-size: 50px;
+    font-weight: bold;
+    margin-right: 10px;
+    color: #ffffff;
+}
+
+#header-sub-title {
+    font-size: 25px;
+    font-weight: bold;
+    color: #d5d5d5;
+}
+
+.main {
+    background-color: white;
+    width: 96%;
+    margin-top: 30px;
+    margin-left: 2%;
+}
+
+#content {
+    background-color: white;
+    padding-top: 50px;
+    width: 96%;
+    margin-left: 2%;
+    padding-bottom: 50px;
+}
+
+.pendahuluan {
+    text-align: center;
+}
+
+#title-luas {
+    text-align: center;
+    background-color: #3379b7;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #fff;
+}
+
+#content-luas {
+    border: solid #3379b7 2px;
+}
+
+.tempat-gambar {
+    display: flex;
+    justify-content: center;
+}
+
+.gambar-persegi {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    /*margin-left: 45.4%;*/
+    width: 120px;
+    height: 120px;
+    border: solid #9b282d 2px;
+    text-align: center;
+}
+
+#AB {
+    margin-top: -20px;
+    width: 160px;
+}
+
+#A{
+    margin-right: 130px;
+    margin-left: -40px;
+}
+
+#CD {
+    margin-top: 120px;
+    width: 160px;
+}
+
+#C{
+    margin-right: 130px;
+    margin-left: -40px;
+}
+
+#bujur-sangkar {
+    text-align: center;
+    margin-top: -5px;
+    font-weight: bold;
+}
+
+.keterangan-rumus-luas {
+    padding-left: 30px;
+}
+
+.rumus-luas {
+    padding-left: 0;
+    text-align: center;
+    font-weight: bold;
+}
+
+#titel-hitung-luas {
+    text-align: center;
+    font-size: 35px;
+    font-weight: bold;
+    color: #222;
+}
+
+#space-hitung-luas {
+    margin-top: 30px;
+    border-top:solid #ddd 2px;
+    padding-top: 30px;
+}
+
+#tempat-output-luas {
+    text-align: left;
+    margin-left: 30px;
+    display: none;
+}
+
+#title-keliling {
+    text-align: center;
+    background-color: #3379b7;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    margin-top: 50px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #fff;
+}
+
+#content-keliling {
+    border: solid #3379b7 2px;
+}
+
+.keterangan-rumus-keliling {
+    padding-left: 30px;
+}
+
+.rumus-keliling {
+    padding-left: 0;
+    text-align: center;
+    font-weight: bold;
+}
+
+#titel-hitung-keliling {
+    text-align: center;
+    font-size: 35px;
+    font-weight: bold;
+    color: #333;
+}
+
+#space-hitung-keliling {
+    margin-top: 30px;
+    border-top:solid #ddd 2px;
+    padding-top: 30px;
+}
+
+button[type=submit]{
+    min-width: 80px;
+    border-radius: 5px;
+    min-height: 40px;
+    margin-top: 15px;
+    background-color: #3379b7;
+    color: #ddd;
+    border: none;
+    font-weight: bold;
+}
+
+button[type=submit]:hover{
+    background-color: #19568c;
+}
+
+button[type=reset]{
+    min-width: 70px;
+    border-radius: 5px;
+    min-height: 35px;
+    margin-top: 60px;
+    background-color: #efad4e;
+    color: #fff;
+    border: none;
+    font-weight: bold;
+    font-size: 12px;
+    margin-bottom: 40px;
+    margin-left: 90%;
+}
+
+button[type=reset]:hover{
+    background-color:#c0822c;
+}
+form {
+    text-align: center;
+}
+
+#tempat-output-keliling {
+    text-align: left;
+    margin-left: 30px;
+    display: none;
+}
+
+input {
+    margin-top: 20px;
+    width: 95%;
+    height: 30px;
+}
+
+#tempat-input, #tempat-button-hitung {
+    text-align: center;
+}
+
+#numberText_1 {
+    color: red;
+    font-size: 10px;
+}
+
+#numberText_2 {
+    color: red;
+    font-size: 10px;
+}
